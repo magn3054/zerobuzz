@@ -33,10 +33,6 @@ header {
     height: 100%;
 }
 
-#checkbox2 {
-    display: none;
-}
-  
 .burger {
     position: relative;
     width: 3rem;
@@ -51,7 +47,7 @@ header {
     gap: 0.5rem;
     transition-duration: 0.5s;
 }
-  
+
 .bars {
     width: 100%;
     height: 0.5rem;
@@ -59,13 +55,17 @@ header {
     border: 0.1rem solid #000;
     border-radius: 0.375rem;
 }
-  
+
 #bar5 {
     transition-duration: .8s;
 }
-  
+
 #bar4,#bar6 {
     width: 80%;
+}
+
+#checkbox2 {
+    display: none;
 }
   
 #checkbox2:checked + .burger .bars {
@@ -73,27 +73,27 @@ header {
     transition-duration: .5s;
 }
   
-#checkbox2:checked + .burger #bar5 {
-    transform: scaleX(0);
-    transition-duration: .5s;
-}
-  
-#checkbox2:checked + .burger #bar4 {
-    width: 100%;
-    transform: rotate(45deg);
-    transition-duration: .5s;
-}
-  
-#checkbox2:checked + .burger #bar6 {
-    width: 100%;
-    transform: rotate(-45deg);
-    transition-duration: .5s;
-}
-  
-#checkbox2:checked + .burger {
-    transition-duration: .5s;
-    transform: rotate(180deg);
-}
+    #checkbox2:checked + .burger #bar5 {
+        transform: scaleX(0);
+        transition-duration: .5s;
+    }
+    
+    #checkbox2:checked + .burger #bar4 {
+        width: 100%;
+        transform: rotate(45deg);
+        transition-duration: .5s;
+    }
+    
+    #checkbox2:checked + .burger #bar6 {
+        width: 100%;
+        transform: rotate(-45deg);
+        transition-duration: .5s;
+    }
+    
+    #checkbox2:checked + .burger {
+        transition-duration: .5s;
+        transform: rotate(180deg);
+    }
 
 .dropdown {
   display: none;
@@ -115,36 +115,61 @@ header {
   
     & > ul {
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        width: min-content;
     }
 
     & > ul > li {
-        margin: 2rem 0;
+        margin: 1rem 0;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        width: min-content;
+    }
+
+    & > ul > li > label {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
         align-items: center;
     }
-    
-    & > ul > li > label {
-        display: flex;
-        align-items: center;
+
+    & > ul > li > label > input:checked > label {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
     }
     
     & > ul > li > label > input {
         display: none;
+        grid-area: 1 / 1 / 2 / 2;
     }
 
     & > ul > li > label > img {
         height: 3rem;
         width: auto;
+        margin-right: 0.25rem;
+        grid-area: 1 / 1 / 2 / 2;
     }
 
-    & > ul > li > label > .beer-closed, & > ul > li > label > input:checked ~ .beer-open {
-        display: block;
+    & > ul > li > label > h2 {
+        grid-area: 1 / 2 / 2 / 3;
+        justify-self: start;
     }
-    
-    & > ul > li > label > .beer-open, & > ul > li > label > input:checked ~ .beer-closed {
+
+    & > ul > li > label > .beer-open, 
+    & > ul > li > label > input:checked ~ .beer-closed {
         display: none;
+    }
+
+    & > ul > li > label > .beer-closed, 
+    & > ul > li > label > input:checked ~ .beer-open {
+        display: block;
     }
 
     & > ul > li > label > a{
@@ -153,7 +178,32 @@ header {
     }
 }
 
+.subsections {
+    display: none;
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: start;
+    border: red solid 2px;
+}
 
+#ol-drop:checked ~ .subsections, 
+#brygning-drop:checked ~ .subsections, 
+#kontakt-drop:checked ~ .subsections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fab832;
+    width: 100%;
+    height: 100%;
+
+    & > ul {
+        list-style-type: none;
+    }
+
+    & > ul > li > a{
+        text-decoration: none;
+        color: #000;
+    }
+}
 
 @media only screen and (min-width: 769px) {
     header {
