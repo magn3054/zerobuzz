@@ -105,7 +105,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
     min-height: 50vh;
     background-color: #fab832;
     position: absolute;
@@ -136,13 +135,14 @@ header {
         grid-row-gap: 0px;
         align-items: center;
     }
-
+    
     & > ul > li > label > input:checked > label {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        align-items: center;
     }
     
     & > ul > li > label > input {
@@ -182,7 +182,6 @@ header {
     display: none;
     grid-area: 2 / 2 / 3 / 3;
     justify-self: start;
-    border: red solid 2px;
 }
 
 #ol-drop:checked ~ .subsections, 
@@ -192,16 +191,24 @@ header {
     flex-direction: column;
     justify-content: center;
     background-color: #fab832;
-    width: 100%;
+    width: max-content;
     height: 100%;
+    font-family: poppins;
+    font-weight: bold;
 
     & > ul {
         list-style-type: none;
     }
 
+    & > ul > li {
+        margin: 0 0 0.5rem 0;
+    }
+
     & > ul > li > a{
         text-decoration: none;
         color: #000;
+        margin-left: 1rem;
+        letter-spacing: normal;
     }
 }
 
