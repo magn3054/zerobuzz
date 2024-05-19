@@ -14,6 +14,21 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div id="age-check-modal" class="modal">
+        <div class="modal-content">
+            <h2>Bekræft Din Alder</h2>
+            <p>Du skal være mindst 18 år for at besøge denne side.</p>
+            <button id="age-yes">
+                <img src="img/yes-button.svg" alt="ja knap">
+                Jeg er over 18 
+            </button>
+            <button id="age-no">
+                <img src="img/no-button.svg" alt="">
+                Jeg er under 18 
+            </button>
+        </div>
+    </div>
+
     <header>
         <nav class="phone-nav">
             <img class="logo-img" src="img/logo_letter-bg.svg" alt="Logo">
@@ -126,11 +141,10 @@
                 <li>
                     <h4>BRYGNING</h4>
                     <div class="subnav">
-                        <h6>Øl 1</h6>
-                        <h6>ØL 2</h6>
-                        <h6>Øl 3</h6>
-                        <h6>Øl 4</h6>
-                        <h6>Øl 5</h6>
+                        <h6>Gyldne Metode</h6>
+                        <h6>Mød Bryggerne</h6>
+                        <h6>Brygshops</h6>
+                        <h6>Øl Mesters Blog</h6>
                     </div>
                 </li>
                 <img class="logo-img" src="img/logo_color.webp" alt="Logo">
@@ -140,8 +154,10 @@
                 <li>
                     <h4>SÆSON</h4>
                     <div class="subnav">
-                        <h6>Kontakt os</h6>
-                        <h6>Øl til din fest</h6>
+                        <h6>Forår</h6>
+                        <h6>Sommer</h6>
+                        <h6>Efterår</h6>
+                        <h6>Vinter</h6>
                     </div>
                 </li>
                 <li>
@@ -200,7 +216,7 @@
                     <img src="img/instagram.svg" alt="Instagram logo">
                     <h5>Instagram</h5>
                 </a>
-                <a href="www.linkedin.com/in/magnus-christiansen" class="soc">
+                <a href="https://www.linkedin.com/in/magnus-christiansen" class="soc">
                     <img src="img/linkedin.svg" alt="LinkedIn logo">
                     <h5>LinkedIn</h5>
                 </a>
@@ -208,6 +224,25 @@
         </div>
     </footer>
 
+    <div id="windowSize"></div> 
+    <script>
+      // Function to update window size information
+      function updateWindowSize() {
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  
+        // Display window size information in the div with id "windowSize"
+        document.getElementById('windowSize').innerHTML = 'Window Width: ' + windowWidth + '<br>Window Height: ' + windowHeight;
+      }
+  
+      // Initial call to set the initial window size information
+      updateWindowSize();
+  
+      // Add an event listener to update window size on window resize
+      window.addEventListener('resize', updateWindowSize);
+    </script>
+
+    <script src="js/modal.js"></script>
     <script src="js/header.js"></script>
 </body>
 </html>

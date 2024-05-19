@@ -275,8 +275,10 @@ header {
         
         & > ul > li:hover {
             background-color: #3753BE;
+            border-radius: 4rem 4rem 0 0 ;
             color: #fab832;
             display: block;
+            box-shadow: #7d5c19 0px -3px 10px;
             
             & > a {
                 color: #fab832;
@@ -293,7 +295,8 @@ header {
             width: 100%;
             min-width: max-content;
             border-radius: 0 0 0.75rem 0.75rem;
-
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            
             & > h6 {
                 padding: 1rem;
             }
@@ -313,7 +316,6 @@ header {
             flex-direction: column;
         }
     }
- 
 }
 
 @media only screen and (min-width: 1440px) {
