@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* color: #326DE0; */
 }
 
 html {
@@ -20,7 +19,7 @@ body {
     padding: 0;
 }
 
-/* alders-check */
+/* alders-check modal */
 .modal {
     display: none;
     position: absolute; 
@@ -62,7 +61,6 @@ button {
     & > img {
         width: 5rem;
         height: 5rem;
-        /* margin-left: 1rem; */
     }
 
     & > img[alt = "ja knap"] {

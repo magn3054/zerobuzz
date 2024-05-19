@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo_letter.svg" type="image/x-icon">
     <title>ZeroBuzz</title>
+    <script defer src="js/modal.js"></script> <!-- defer = loader script efter html -->
+    <script defer src="js/header.js"></script> <!-- men holder det overskueligt at have den i head -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
@@ -60,16 +62,6 @@
                                     <li><a href="">ØL 8</a></li>
                                     <li><a href="">ØL 9</a></li>
                                     <li><a href="">ØL 10</a></li>
-                                    <!-- <li><a href="">ØL 11</a></li>
-                                    <li><a href="">ØL 12</a></li>
-                                    <li><a href="">ØL 13</a></li>
-                                    <li><a href="">ØL 14</a></li>
-                                    <li><a href="">ØL 15</a></li>
-                                    <li><a href="">ØL 16</a></li>
-                                    <li><a href="">ØL 17</a></li>
-                                    <li><a href="">ØL 18</a></li>
-                                    <li><a href="">ØL 19</a></li>
-                                    <li><a href="">ØL 20</a></li> -->
                                 </ul>
                             </section>
                         </label>
@@ -83,41 +75,42 @@
                             <h2>BRYGNING</h2>
                             <section class="subsections">
                                 <ul>
-                                    <li><a href="">BRYGNING 1</a></li>
-                                    <li><a href="">bryg 2</a></li>
-                                    <li><a href="">bryg 3</a></li>
+                                    <li><a href="">Gylden Metode</a></li>
+                                    <li><a href="">Mød Bryggerne</a></li>
+                                    <li><a href="">Brygshops</a></li>
+                                    <li><a href="">Øl Mesters Blog</a></li>
                                 </ul>
                             </section>
                         </label>
                     </li>
                     
                     <li>
-                        <label class="drop" for="om-drop">
-                            <!-- <input id="om-drop" type="checkbox"> -->
+                        <label class="drop" for="season-drop">
+                            <input id="season-drop" type="checkbox">
                             <img class="beer-closed" src="img/beer-icon-full.svg" alt="Øl ikon">
-                            <!-- <img class="beer-open" src="img/beer-icon-empty.svg" alt="Øl ikon"> -->
-                            <a href=""><h2>OM</h2></a>
-                            <!-- <section class="subsections">
+                            <img class="beer-open" src="img/beer-icon-empty.svg" alt="Øl ikon">
+                            <h2>SÆSON</h2>
+                            <section class="subsections">
                                 <ul>
-                                    <li><a href="">om 1</a></li>
-                                    <li><a href="">bryg 2</a></li>
-                                    <li><a href="">bryg 3</a></li>
+                                    <li><a href="">Forår</a></li>
+                                    <li><a href="">Sommer</a></li>
+                                    <li><a href="">Efterår</a></li>
+                                    <li><a href="">Vinter</a></li>
                                 </ul>
-                            </section> -->
+                            </section>
                         </label>
                     </li>
                     
                     <li>
-                        <label class="drop" for="kontakt-drop">
-                            <input id="kontakt-drop" type="checkbox">
+                        <label class="drop" for="event-drop">
+                            <input id="event-drop" type="checkbox">
                             <img class="beer-closed" src="img/beer-icon-full.svg" alt="Øl ikon">
                             <img class="beer-open" src="img/beer-icon-empty.svg" alt="Øl ikon">
-                            <h2>KONTAKT</h2>
+                            <h2>EVENTS</h2>
                             <section class="subsections">
                                 <ul>
-                                    <li><a href="">kontakt 1</a></li>
-                                    <li><a href="">bryg 2</a></li>
-                                    <li><a href="">bryg 3</a></li>
+                                    <li><a href="">Bryg Din Egen</a></li>
+                                    <li><a href="">Øl Til Din Fest</a></li>
                                 </ul>
                             </section>
                         </label>
@@ -148,9 +141,6 @@
                     </div>
                 </li>
                 <img class="logo-img" src="img/logo_color.webp" alt="Logo">
-                <!-- <li>
-                    <a href="contact.html"><h4>OM</h4></a>
-                </li> -->
                 <li>
                     <h4>SÆSON</h4>
                     <div class="subnav">
@@ -163,8 +153,8 @@
                 <li>
                     <h4>EVENTS</h4>
                     <div class="subnav">
-                        <h6>Kontakt os</h6>
-                        <h6>Øl til din fest</h6>
+                        <h6>Bryg Din Egen</h6>
+                        <h6>Øl Til Din Fest</h6>
                     </div>
                 </li>
             </ul>
@@ -242,7 +232,6 @@
       window.addEventListener('resize', updateWindowSize);
     </script>
 
-    <script src="js/modal.js"></script>
-    <script src="js/header.js"></script>
+    
 </body>
 </html>

@@ -1,31 +1,45 @@
-// laver variabler med alle afkrydsningsfelterne
+// laver variabler med alle menuer
 var olDrop = document.getElementById('ol-drop');
 var brygningDrop = document.getElementById('brygning-drop');
-var kontaktDrop = document.getElementById('kontakt-drop');
+var seasonDrop = document.getElementById('season-drop');
+var eventDrop = document.getElementById('event-drop');
 
 // event listener for olDrop
 olDrop.addEventListener('change', function() {
     if(this.checked) {
-        // fjern markeringen fra brygningDrop og kontaktDrop
+        // fjern markeringen fra de andre
         brygningDrop.checked = false;
-        kontaktDrop.checked = false;
+        seasonDrop.checked = false;
+        eventDrop.checked = false;
     }
 });
 
 // event listener for brygningDrop
 brygningDrop.addEventListener('change', function() {
     if(this.checked) {
-        // fjern markeringen fra olDrop og kontaktDrop
+        // fjern markeringen fra de andre
         olDrop.checked = false;
-        kontaktDrop.checked = false;
+        seasonDrop.checked = false;
+        eventDrop.checked = false;
     }
 });
 
-// event listener for kontaktDrop
-kontaktDrop.addEventListener('change', function() {
+// event listener for seasonDrop
+seasonDrop.addEventListener('change', function() {
     if(this.checked) {
-        // fjern markeringen fra olDrop og brygningDrop
+        // fjern markeringen fra de andre
         olDrop.checked = false;
         brygningDrop.checked = false;
+        eventDrop.checked = false;
+    }
+});
+
+// event listener for eventDrop
+eventDrop.addEventListener('change', function() {
+    if(this.checked) {
+        // fjern markeringen fra de andre
+        olDrop.checked = false;
+        brygningDrop.checked = false;
+        seasonDrop.checked = false;
     }
 });

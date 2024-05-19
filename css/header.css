@@ -187,7 +187,8 @@ header {
 
 #ol-drop:checked ~ .subsections, 
 #brygning-drop:checked ~ .subsections, 
-#kontakt-drop:checked ~ .subsections {
+#season-drop:checked ~ .subsections, 
+#event-drop:checked ~ .subsections {
     display: flex;
     flex-direction: column;
     justify-content: center;
