@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Check if age is already verified in session storage
     if (sessionStorage.getItem("ageVerified") === "true") {
-      content.style.display = "block";
+      modal.style.display = "none";
     } else {
       modal.style.display = "block";
     }
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     yesButton.addEventListener("click", function() {
       sessionStorage.setItem("ageVerified", "true");
       modal.style.display = "none";
-      content.style.display = "block";
+      // content.style.display = "block";
     });
   
     noButton.addEventListener("click", function() {
