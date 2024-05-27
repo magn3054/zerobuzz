@@ -1,13 +1,14 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("age-check-modal");
-    const content = document.getElementById("content");
+    const overlay = document.querySelector(".overlay");
     const yesButton = document.getElementById("age-yes");
     const noButton = document.getElementById("age-no");
   
     // Check if age is already verified in session storage
     if (sessionStorage.getItem("ageVerified") === "true") {
       modal.style.display = "none";
+      overlay.style.opacity = "1";
     } else {
       modal.style.display = "block";
     }
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     yesButton.addEventListener("click", function() {
       sessionStorage.setItem("ageVerified", "true");
       modal.style.display = "none";
-      // content.style.display = "block";
+      overlay.style.opacity = "1";
     });
   
     noButton.addEventListener("click", function() {

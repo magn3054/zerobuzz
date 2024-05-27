@@ -6,3 +6,54 @@ main {
     background-color: #f5f5f5;
 } 
 
+.pic-container { /* første billede på index side, med overlay billede (3 øl) */
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    & > picture { 
+        display: block;
+
+        & > * {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & > .overlay {
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -105%);
+        width: 45%;
+        height: auto;
+        filter: drop-shadow(2px 8px 10px #1a1a1a);
+        transition: opacity 2s ease;
+    }
+}
+
+.karrusel {
+    border: red 1px solid;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    & > .hest {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        margin: 0 0 0 0.5rem;
+        height: 100%; 
+        border: red 1px solid;
+    }
+
+    & > .hest > img {
+        height: 100%;
+        width: auto;
+    }
+}
