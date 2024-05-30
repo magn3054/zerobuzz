@@ -23,37 +23,135 @@ main {
     & > .overlay {
         opacity: 0;
         position: absolute;
-        top: 100%;
-        left: 100%;
-        transform: translate(-100%, -105%);
-        width: 45%;
-        height: auto;
+        top: 5%;
+        right: 2.5%;
+        height: 90%;
+        width: auto;
         filter: drop-shadow(2px 8px 10px #1a1a1a);
         transition: opacity 2s ease;
     }
 }
 
-.karrusel {
-    border: red 1px solid;
-    height: 10rem;
+.shop {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-
-    & > .hest {
+    flex-direction: column;
+    justify-content: center;
+    
+    & > .vare {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        width: 30%;
-        margin: 0 0 0 0.5rem;
-        height: 100%; 
-        border: red 1px solid;
+        width: auto;
+        height: 15rem;
+        padding: 0.5rem 0.25rem;
+        margin: 0.5rem 1rem;
+        background-color: #fab832;
+        
+        & > .beer-image {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19) inset, 0 6px 6px rgba(0,0,0,0.23) inset;
+            margin: 0.25rem;
+            padding: 0.25rem;
+            
+            & > img {
+                height: 100%;
+                width: auto;
+            }
+        }
+        
+        & > .right {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            margin-right: 0.5rem;
+            padding: 0.25rem;
+
+            & > .beer-tekst {
+                display: flex;
+                 flex-direction: column;
+                height: 100%;
+                width: 100%;
+
+                & > h2 {
+                    font-family: 'Abril Fatface', serif;
+                    margin: 0 0 0.12rem 0;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2rem;
+                }
+
+                & > h4 {
+                    margin: 0 0 0 0.25rem;
+                }
+            }
+
+            & > button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: flex-end;
+                width: 5rem;
+                margin: 0 0 .5rem 0;
+                padding: 0.25rem;
+                background-color: #fab832;
+                border: 4px solid #3753BE;
+                color: #012249;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                font-size: medium;
+                font-weight: bold;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.19), 0 2px 6px rgba(0,0,0,0.23);
+                transition: transform 0.2s ease;
+
+                &:active {
+                    transform: scale(0.95); 
+                    box-shadow: 0 5px 20px rgba(0,0,0,0.19) inset, 0 2px 6px rgba(0,0,0,0.23) inset;
+                }
+            }
+        }
+    }    
+
+    & > .hidden {
+        display: none;
+    }
+}
+
+.se-mere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    margin: 0 1rem;
+    
+    & > .linje {
+        width: 100%;
+        height: 0.1rem;
+        background-color: #012249;
+    }
+    & > .linje:first-of-type {
+        margin: 0 0 0 1rem;
+    }
+    & > .linje:last-of-type {
+        margin: 0 1rem 0 0;
     }
 
-    & > .hest > img {
-        height: 100%;
-        width: auto;
+    & > #se-mere {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        min-width: max-content;
+        color: #012249;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: medium;
+        font-weight: bold;
     }
 }

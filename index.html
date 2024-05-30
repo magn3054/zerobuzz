@@ -11,6 +11,7 @@
     <title>ZeroBuzz</title>
     <script defer src="js/modal.js"></script> <!-- defer = loader script efter html -->
     <script defer src="js/header.js"></script> <!-- men holder det overskueligt at have den i head -->
+    <script defer src="js/index.js"></script>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
@@ -173,25 +174,86 @@
             </picture>
         </section>
 
-        <section class="karrusel">
-            <div class="hest">
-                <img src="img/pilsner.webp" alt="Hvede øl">
+
+        <section class="shop">
+            <div class="vare">
+                <div class="beer-image">
+                    <img src="img/pilsner.webp" alt="Pilsner øl">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>Pilsner</h2>
+                        <h4>
+                            Oplev friskheden i vores alkoholfrie pilsner - samme smag, ingen alkohol. Perfekt til enhver anledning!
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
             </div>
             
-            <div class="hest">
-                <img src="img/ipa.webp" alt="Hvede øl">
+            <div class="vare">
+                <div class="beer-image">
+                    <img src="img/ipa.webp" alt="IPA øl">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>Ipa</h2>
+                        <h4>
+                            Oplev intens humlesmag med vores IPA - en kompleks og fyldig øl, perfekt for ølentusiaster!
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
             </div>
             
-            <div class="hest">
-                <img src="img/wheat.webp" alt="Hvede øl">
+            <div class="vare hid hidden">
+                <div class="beer-image">
+                    <img src="img/citrus.webp" alt="Citrus øl">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>citrus øl</h2>
+                        <h4>
+                            Forkæl dine sanser med vores citrusøl - en forfriskende og sprudlende øl med en frisk citrussmag!
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
             </div>
             
-            <div class="hest">
-                <img src="img/stout.webp" alt="Hvede øl">
+            <div class="vare hid hidden">
+                <div class="beer-image">
+                    <img src="img/wheat.webp" alt="Hvede øl">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>lys hvede</h2>
+                        <h4>
+                            Nyd lethed og blødhed med vores lyse hvedeøl - ideel til varme sommerdage og afslappede stunder.
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
             </div>
             
-            <div class="hest">
-                <img src="img/citrus.webp" alt="Hvede øl">
+            <div class="vare hid hidden">
+                <div class="beer-image">
+                    <img src="img/stout.webp" alt="Stout">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>stout</h2>
+                        <h4>
+                            Dyk ned i vores stout - en mørk, fyldig øl med rige noter af chokolade og kaffe. Perfekt til hygge!
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
+            </div>
+            <div class="se-mere">
+                <div class="linje"></div>
+                <div id="se-mere">Se mere</div>
+                <div class="linje"></div>
             </div>
         </section>
     </main>
@@ -233,25 +295,6 @@
             </section>
         </div>
     </footer>
-
-    <!-- <div id="windowSize"></div>  -->
-    <script>
-      // Function to update window size information
-      function updateWindowSize() {
-        var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-  
-        // Display window size information in the div with id "windowSize"
-        document.getElementById('windowSize').innerHTML = 'Window Width: ' + windowWidth + '<br>Window Height: ' + windowHeight;
-      }
-  
-      // Initial call to set the initial window size information
-      updateWindowSize();
-  
-      // Add an event listener to update window size on window resize
-      window.addEventListener('resize', updateWindowSize);
-    </script> 
-
     
 </body>
 </html>

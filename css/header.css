@@ -1,7 +1,8 @@
 header {
     font-family: 'Abril Fatface', serif;
     letter-spacing: 0.25rem;
-    height: min-content;
+    min-height: min-content;
+    height: 8rem;
     padding: 1rem 0;
     width: 100%;
     background-color: #fab732;
@@ -12,6 +13,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .logo-img {
