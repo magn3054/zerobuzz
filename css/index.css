@@ -232,7 +232,6 @@ main {
             max-width: 2000px;
             box-shadow: 2px 2px 12px -1px #0d2747,
                 -4px -2px 20px -20px #0d274786;
-            margin: 0 0 0 1rem;
         }
 
         & > .beskrivelse {
