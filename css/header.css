@@ -2,7 +2,7 @@ header {
     font-family: 'Abril Fatface', serif;
     letter-spacing: 0.25rem;
     min-height: min-content;
-    height: 8rem;
+    height: 5.5rem;
     padding: 1rem 0;
     width: 100%;
     background-color: #fab732;
@@ -280,7 +280,7 @@ header {
         
         & > ul > li:hover {
             background-color: #3753BE;
-            border-radius: 4rem 4rem 0 0 ;
+            border-radius: 2.5rem 2.5rem 0 0;
             color: #fab832;
             display: block;
             box-shadow: #7d5c19 0px -3px 10px;
@@ -292,27 +292,35 @@ header {
         
         & > ul > li > .subnav {
             display: none;
+            align-self: center;
             position: absolute;
             font-family: poppins;
             letter-spacing: normal;
-            background-color: #3753BE;
+            background-color: #3752be;
             color: #fab832;
             width: 100%;
             min-width: max-content;
-            border-radius: 0 0 0.75rem 0.75rem;
+            border-radius: 0 0 2.5rem 2.5rem;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
             
-            & > h6 {
-                padding: 1rem;
+            & > div {
+                width: 100%;               
             }
 
-            & > h6:hover {
+            & > div > h5 {
+                display: flex; 
+                padding: 1rem;
+                justify-content: center;
+            }
+
+            & > div > h5:hover {
                 background-color: #fab832;
                 color: #012249;
                 
-                &:last-of-type {
-                    border-radius: 0 0 0.75rem 0.75rem;
-                }
+            }
+            
+            & > div:last-of-type h5:hover {
+                border-radius: 0 0 2.5rem 2.5rem;
             }
         }
         

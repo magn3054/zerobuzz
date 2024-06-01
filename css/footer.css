@@ -5,7 +5,7 @@ footer {
     height: min-content;
     bottom: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 99;
     background-color: #fab832;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
