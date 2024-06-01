@@ -50,7 +50,8 @@ footer {
     & > a {
         margin: 0.5rem 0 0 0;
         letter-spacing: 0.2rem;
-        color:#000
+        color: #012249;
+        text-decoration: none;
     }
 }
 
@@ -68,7 +69,7 @@ footer {
         align-items: center;
         justify-content: flex-start;
         text-decoration: none;
-        color: #000;
+        color: #012249;
         margin: 0 0 0.5rem 0;
     }
 
@@ -138,7 +139,7 @@ footer {
         & > a {
             margin: 0.5rem 0 0 0;
             letter-spacing: 0.2rem;
-            color:#000
+            color: #012249;
         }
     }
     
@@ -156,7 +157,7 @@ footer {
             align-items: center;
             justify-content: flex-start;
             text-decoration: none;
-            color: #000;
+            color: #012249;
             padding: 0 2rem 0 0;
         }
     

@@ -5,6 +5,7 @@
 }
 
 html {
+    overflow-x: hidden;
     color: #012249;
     height: 100%;
     font-family: poppins;
@@ -56,6 +57,7 @@ body {
             cursor: pointer;
             border-radius: 0.75rem;
             box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+            color: #012249;
             font-size: large;
             font-weight: bold;
 

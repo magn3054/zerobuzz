@@ -53,16 +53,11 @@
                             <h2>ØL</h2>
                             <section class="subsections">
                                 <ul>
-                                    <li><a href="">ØL 1</a></li>
-                                    <li><a href="">ØL 2</a></li>
-                                    <li><a href="">ØL 3</a></li>
-                                    <li><a href="">ØL 4</a></li>
-                                    <li><a href="">ØL 5</a></li>
-                                    <li><a href="">ØL 6</a></li>
-                                    <li><a href="">ØL 7</a></li>
-                                    <li><a href="">ØL 8</a></li>
-                                    <li><a href="">ØL 9</a></li>
-                                    <li><a href="">ØL 10</a></li>
+                                    <li><a href="">Pilsner</a></li>
+                                    <li><a href="">IPA</a></li>
+                                    <li><a href="">Lys Hvede</a></li>
+                                    <li><a href="">Stout</a></li>
+                                    <li><a href="">Citrus</a></li>
                                 </ul>
                             </section>
                         </label>
@@ -125,11 +120,11 @@
                 <li>
                     <h4>ØL</h4>
                     <div class="subnav">
-                        <h6>Øl 1</h6>
-                        <h6>ØL 2</h6>
-                        <h6>Øl 3</h6>
-                        <h6>Øl 4</h6>
-                        <h6>Øl 5</h6>
+                        <h6>Pilsner</h6>
+                        <h6>IPA</h6>
+                        <h6>Lys Hvede</h6>
+                        <h6>Stout</h6>
+                        <h6>Citrus</h6>
                     </div>
                 </li>
                 <li>
@@ -165,7 +160,8 @@
     <main>
         <section class="pic-container">
             <picture>
-                <source srcset="img/crowd.webp" type="image/webp">
+                <source srcset="img/crowd-half.webp" type="image/webp" media="(min-width: 1000px)">
+                <source srcset="img/crowd.webp" type="image/webp" media="(max-width: 999px)">
                 <img src="img/crowd.webp" alt="en strand med folk">
             </picture>
             <picture class="overlay">
@@ -254,6 +250,103 @@
                 <div class="linje"></div>
                 <div id="se-mere">Se mere</div>
                 <div class="linje"></div>
+            </div>
+        </section>
+
+        <section class="shop">
+            <div class="vare">
+                <div class="beer-image">
+                    <img src="img/pilsner-can.webp" alt="Pilsner øl">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>Pilsner</h2>
+                        <h4>
+                            Oplev friskheden i vores alkoholfrie pilsner - samme smag, ingen alkohol. Perfekt til enhver anledning!
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
+            </div>
+            
+            <div class="vare">
+                <div class="beer-image">
+                    <img src="img/ipa-can.webp" alt="IPA øl">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>Ipa</h2>
+                        <h4>
+                            Oplev intens humlesmag med vores IPA - en kompleks og fyldig øl, perfekt for ølentusiaster!
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
+            </div>
+            
+            <div class="vare hid hidden">
+                <div class="beer-image">
+                    <img src="img/citrus-can.webp" alt="Citrus øl">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>citrus øl</h2>
+                        <h4>
+                            Forkæl dine sanser med vores citrusøl - en forfriskende og sprudlende øl med en frisk citrussmag!
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
+            </div>
+            
+            <div class="vare hid hidden">
+                <div class="beer-image">
+                    <img src="img/wheat-can.webp" alt="Hvede øl">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>lys hvede</h2>
+                        <h4>
+                            Nyd lethed og blødhed med vores lyse hvedeøl - ideel til varme sommerdage og afslappede stunder.
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
+            </div>
+            
+            <div class="vare hid hidden">
+                <div class="beer-image">
+                    <img src="img/stout-can.webp" alt="Stout">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h2>stout</h2>
+                        <h4>
+                            Dyk ned i vores stout - en mørk, fyldig øl med rige noter af chokolade og kaffe. Perfekt til hygge!
+                        </h4>
+                    </div>
+                    <button>Tilføj</button>
+                </div>
+            </div>
+            <div class="se-mere">
+                <div class="linje"></div>
+                <div id="se-mere-cans">Se mere</div>
+                <div class="linje"></div>
+            </div>
+        </section>
+
+        <section class="mission">
+            <picture>
+                <source srcset="img/crowd-double-half.webp" type="image/webp" media="(min-width: 1000px)">
+                <source srcset="img/crowd.webp" type="image/webp" media="(max-width: 999px)">
+                <img src="img/crowd.webp" alt="en strand med folk">
+            </picture>
+            <div class="beskrivelse">
+                <h2>Vores mission</h2>
+                <h4>
+                    Hos ZeroBuzz Brew er vores mission at tilbyde de bedste alkoholfri øl, der fremmer en sundere livsstil og skaber inkluderende øjeblikke af nydelse og fællesskab.
+                    Vi stræber efter at blive det foretrukne valg for alle, der ønsker kvalitetsøl uden alkohol, og at inspirere til bevidste, sociale valg.
+                </h4>
             </div>
         </section>
     </main>
