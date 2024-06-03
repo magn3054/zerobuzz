@@ -239,7 +239,7 @@ header {
         width: auto;
         
         &:hover {
-            background-color: #3573be;
+            background-color: #3753be;
             border-radius: 40%;
         }
     }

@@ -1,3 +1,8 @@
+.desktop-nav > ul > li:first-of-type > a > h4 {
+    background-color: #3753be;
+    border-radius: 10rem;
+    color: #fab832;
+}
 .shop {
     width: 100%;
     display: flex;

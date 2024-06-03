@@ -1,5 +1,5 @@
 .home {
-    background-color: #3573be;
+    background-color: #3753be;
     border-radius: 40%;
 }
 
@@ -93,7 +93,7 @@ main {
 
         & > input:not([type="submit"]) {
             min-width: 100%;
-            border: solid 2px #3573be;
+            border: solid 2px #3753be;
             border-radius: 1rem;
             padding: 1rem;
             margin: 0.75rem 0;

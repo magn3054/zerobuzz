@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo_letter.svg" type="image/x-icon">
-    <title>ZeroBuzz | Alkoholfri Øl | Køb Bedste 0% Øl fra Microbryggeri i Danmark</title>
+    <title>ZeroBuzz Blog | Fordele ved Alkoholfri Øl | Køb Bedste 0% Øl fra Microbryggeri i Danmark</title>
     <script defer src="js/modal.js"></script> <!-- defer = loader script efter html -->
     <script defer src="js/header.js"></script> <!-- men holder det overskueligt at have den i head -->
-    <script defer src="js/index.js"></script>
+    <!-- <script defer src="js/index.js"></script> -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fordele.css">
 </head>
 <body>
     <div id="age-check-modal" class="modal">
@@ -160,196 +160,84 @@
     </header>
     
     <main>
-        <section class="pic-container">
-            <picture>
-                <source srcset="img/f1.webp" type="image/webp" media="(min-width: 1000px)">
-                <source srcset="img/f1.webp" type="image/webp" media="(max-width: 999px)">
-                <img src="img/crowd.webp" alt="en strand med folk">
-            </picture>
-            <picture class="overlay">
-                <source srcset="img/three-beers.webp" type="image/webp">
-                <img src="img/three-beers.webp" alt="Tre øl">
-            </picture>
+        <section class="blog post1">
+            <h2>Hvorfor Alkoholfri Øl er Godt</h2>
+            <img src="img/luciana.webp" alt="Kvinde med en ZeroBuzz Pilsner">
+            <h3>Sundhedsfordele</h3>
+            <h5>Alkoholfri øl er blevet en populær drik blandt dem, der ønsker at nyde smagen af øl uden de negative effekter af alkohol. Hos ZeroBuzz, dit foretrukne microbryggeri for alkoholfri øl i Danmark, er vi stolte af at tilbyde en bred vifte af alkoholfri øl, der både smager godt og har mange fordele.</h5>
+            <h4>Lavere Kalorieindhold</h4>
+            <h5>Alkoholfri øl indeholder typisk færre kalorier end almindelig øl, hvilket gør det til et bedre valg for dem, der ønsker at holde øje med deres kalorieindtag. Ved at vælge alkoholfri øl fra ZeroBuzz, kan du nyde en velsmagende drik uden at bekymre dig om ekstra kalorier.</h5>
+            <h4>Mindre Risiko for Alkoholrelaterede Skader</h4>
+            <h5>Uden alkoholens negative virkninger reducerer alkoholfri øl risikoen for alkoholrelaterede sundhedsproblemer som leverskader og hjertesygdomme. Vores alkoholfri øl er brygget med den højeste standard for at sikre din sundhed.</h5>
+            <h4>Hydrering</h4>
+            <h5>Nogle alkoholfri øl indeholder elektrolytter, som kan hjælpe med at holde kroppen hydreret, især efter fysisk aktivitet. Prøv vores alkoholfri øl for en forfriskende og hydrerende oplevelse.</h5>
+            <h3>Sociale Fordele</h3>
+            <h4>Nyd Smagen uden At Blive Beruset</h4>
+            <h5>Du kan nyde den autentiske ølsmag uden at bekymre dig om at blive beruset, hvilket er ideelt til sociale arrangementer, hvor du vil være skarp og til stede. Med ZeroBuzz's udvalg af alkoholfri øl kan du være en del af fællesskabet uden alkoholens påvirkning.</h5>
+            <h4>Forbedret Søvnkvalitet</h4>
+            <h5>Uden alkohol i systemet vil du sandsynligvis opleve en bedre søvnkvalitet, hvilket betyder, at du kan vågne op frisk og udhvilet. Vores alkoholfri øl hjælper dig med at opretholde en sund søvnrytme.</h5>
+            <h3>Miljøfordele</h3>
+            <h4>Bæredygtighed</h4>
+            <h5>Produktion af alkoholfri øl kan være mere bæredygtig, da det kræver mindre energi at fremstille og reducerer spild af ressourcer. Hos ZeroBuzz er vi engageret i bæredygtig produktion og miljøvenlige metoder.</h5>
+            <h5>Alkoholfri øl tilbyder en bred vifte af fordele, der gør det til et fremragende valg for både sundheds- og miljøbevidste forbrugere. Det er en drik, der ikke kun smager godt, men også fremmer en sundere livsstil. Besøg ZeroBuzz i dag og oplev de mange fordele ved vores alkoholfri øl.</h5>
         </section>
 
-
-        <section class="shop">
-            <div class="vare">
-                <div class="beer-image">
-                    <img src="img/pilsner.webp" alt="Pilsner øl">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>Pilsner</h2>
-                        <h4>
-                            Oplev friskheden i vores alkoholfrie pilsner - samme smag, ingen alkohol. Perfekt til enhver anledning!
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div>
-            </div>
-            
-            <div class="vare">
-                <div class="beer-image">
-                    <img src="img/ipa.webp" alt="IPA øl">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>Ipa</h2>
-                        <h4>
-                            Oplev intens humlesmag med vores IPA - en kompleks og fyldig øl, perfekt for ølentusiaster!
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div>
-            </div>
-            
-            <div class="vare hid hidden">
-                <div class="beer-image">
-                    <img src="img/citrus.webp" alt="Citrus øl">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>citrus øl</h2>
-                        <h4>
-                            Forkæl dine sanser med vores citrusøl - en forfriskende og sprudlende øl med en frisk citrussmag!
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div>
-            </div>
-            
-            <div class="vare hid hidden">
-                <div class="beer-image">
-                    <img src="img/wheat.webp" alt="Hvede øl">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>lys hvede</h2>
-                        <h4>
-                            Nyd lethed og blødhed med vores lyse hvedeøl - ideel til varme sommerdage og afslappede stunder.
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div>
-            </div>
-            
-            <div class="vare hid hidden">
-                <div class="beer-image">
-                    <img src="img/stout.webp" alt="Stout">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>stout</h2>
-                        <h4>
-                            Dyk ned i vores stout - en mørk, fyldig øl med rige noter af chokolade og kaffe. Perfekt til hygge!
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div>
-            </div>
-            <div class="se-mere">
-                <div class="linje"></div>
-                <div id="se-mere">Se mere</div>
-                <div class="linje"></div>
-            </div>
+        <section class="blog post2">
+            <h2>Hvordan Man Stadig Kan Være med til Festen uden At Drikke Alkohol</h2>
+            <img src="img/familie.webp" alt="Familie foto med ZeroBuzz øl">
+            <h3>Vælg Alkoholfri Alternativer</h3>
+            <h5>At deltage i sociale arrangementer uden at drikke alkohol kan være en udfordring for nogle, men det behøver ikke at være det. Hos ZeroBuzz, dit foretrukne microbryggeri for alkoholfri øl i Danmark, har vi nogle tips til, hvordan du stadig kan være med til festen uden at drikke alkohol.</h5>
+            <h4>Alkoholfri Cocktails</h4>
+            <h5>Prøv at bestille eller lave dine egne alkoholfri cocktails. Der er mange spændende opskrifter, der kan tilfredsstille dine smagsløg uden at indeholde alkohol. På vores hjemmeside finder du inspiration til lækre alkoholfri drinks.</h5>
+            <h4>Alkoholfri Øl</h4>
+            <h5>Alkoholfri øl er et fantastisk alternativ til almindelig øl. Det smager næsten som det rigtige og giver dig mulighed for at deltage i fællesskabet uden alkohol. Prøv ZeroBuzz's udvalg af alkoholfri øl til din næste fest.</h5>
+            <h3>Fokus på Social Interaktion</h3>
+            <h4>Deltag i Samtaler</h4>
+            <h5>Engager dig i samtaler og lær nye mennesker at kende. At fokusere på de sociale aspekter af festen kan hjælpe dig med at føle dig inkluderet. Vær til stede og nyd samværet med venner og familie.</h5>
+            <h4>Spil og Aktiviteter</h4>
+            <h5>Deltag i festlege eller andre aktiviteter, der ikke kræver alkohol. Dette kan hjælpe dig med at have det sjovt og føle dig som en del af gruppen. Tag del i sjove aktiviteter og spil, der gør aftenen mindeværdig.</h5>
+            <h3>Personlig Komfort</h3>
+            <h4>Vær Ærlig</h4>
+            <h5>Vær åben om, hvorfor du ikke drikker. De fleste vil respektere dit valg og støtte dig. At være ærlig omkring dine valg kan gøre det lettere at undgå pres om at drikke.</h5>
+            <h4>Find En Støttepartner</h4>
+            <h5>Hvis du har en ven eller familiemedlem, der også ikke drikker, kan I støtte hinanden gennem aftenen. At have en allieret kan gøre det nemmere at navigere sociale situationer uden alkohol.</h5>
+            <h3>Sundhedsbevidsthed</h3>
+            <h4>Hold Øje med Dit Velbefindende</h4>
+            <h5>Fokusér på, hvor godt du har det fysisk og mentalt ved ikke at drikke alkohol. Dette kan styrke din beslutning og gøre det lettere at undgå alkohol i sociale sammenhænge. Nyd fordelene ved en sundere livsstil med ZeroBuzz's alkoholfri øl.</h5>
+            <h5>Ved at vælge alkoholfri alternativer, engagere dig socialt og være ærlig om dine valg, kan du nyde festen fuldt ud uden at drikke alkohol. Besøg ZeroBuzz for at finde dine favoritalkoholfri øl til næste sociale arrangement.</h5>
         </section>
 
-        <section class="shop">
-            <div class="vare">
-                <div class="beer-image">
-                    <img src="img/pilsner-can.webp" alt="Pilsner øl">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>Pilsner</h2>
-                        <h4>
-                            Oplev friskheden i vores alkoholfrie pilsner - samme smag, ingen alkohol. Perfekt til enhver anledning!
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div>
-            </div>
-            
-            <div class="vare">
-                <div class="beer-image">
-                    <img src="img/ipa-can.webp" alt="IPA øl">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>Ipa</h2>
-                        <h4>
-                            Oplev intens humlesmag med vores IPA - en kompleks og fyldig øl, perfekt for ølentusiaster!
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div>
-            </div>
-            
-            <div class="vare hid hidden">
-                <div class="beer-image">
-                    <img src="img/citrus-can.webp" alt="Citrus øl">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>citrus øl</h2>
-                        <h4>
-                            Forkæl dine sanser med vores citrusøl - en forfriskende og sprudlende øl med en frisk citrussmag!
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div> 
-            </div>
-            
-            <div class="vare hid hidden">
-                <div class="beer-image">
-                    <img src="img/wheat-can.webp" alt="Hvede øl">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>lys hvede</h2>
-                        <h4>
-                            Nyd lethed og blødhed med vores lyse hvedeøl - ideel til varme sommerdage og afslappede stunder.
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div>
-            </div>
-            
-            <div class="vare hid hidden">
-                <div class="beer-image">
-                    <img src="img/stout-can.webp" alt="Stout">
-                </div>
-                <div class="right">
-                    <div class="beer-tekst">
-                        <h2>stout</h2>
-                        <h4>
-                            Dyk ned i vores stout - en mørk, fyldig øl med rige noter af chokolade og kaffe. Perfekt til hygge!
-                        </h4>
-                    </div>
-                    <button onclick="ref('alkoholfri-ol')">Læs mere</button>
-                </div>
-            </div>
-            <div class="se-mere">
-                <div class="linje"></div>
-                <div id="se-mere-cans">Se mere</div>
-                <div class="linje"></div>
-            </div>
-        </section>
-
-        <section class="mission">
-            <picture>
-                <source srcset="img/crowd-double-half.webp" type="image/webp" media="(min-width: 1000px)">
-                <source srcset="img/crowd.webp" type="image/webp" media="(max-width: 999px)">
-                <img src="img/crowd.webp" alt="en strand med folk">
-            </picture>
-            <div class="beskrivelse">
-                <h2>Vores mission</h2>
-                <h4>
-                    Hos ZeroBuzz Brew er vores mission at tilbyde de bedste alkoholfri øl, der fremmer en sundere livsstil og skaber inkluderende øjeblikke af nydelse og fællesskab. </h4><h4>
-                    Vi stræber efter at blive det foretrukne valg for alle, der ønsker kvalitetsøl uden alkohol, og at inspirere til bevidste, sociale valg.
-                </h4>
-            </div>
+        <section class="blog post3">
+            <h2>Forskellige Typer af Alkoholfri Øl Man Kan Få</h2>
+            <img src="img/barn.webp" alt="Alkoholfri øl fra ZeroBuzz">
+            <h5>Alkoholfri øl er ikke bare én type drik; der findes mange forskellige varianter, der hver tilbyder unikke smagsoplevelser. Hos ZeroBuzz, dit foretrukne microbryggeri for alkoholfri øl i Danmark, er vi stolte af at præsentere et bredt udvalg af alkoholfri øl.</h5>
+            <h3>Lager</h3>
+            <h4>Alkoholfri Lager</h4>
+            <h5>Denne type øl har en let, frisk smag og er en af de mest populære typer af alkoholfri øl. Den minder meget om traditionelle lagerøl, men uden alkohol. Prøv vores alkoholfri lager for en klassisk øloplevelse.</h5>
+            <h3>IPA</h3>
+            <h4>Alkoholfri IPA (India Pale Ale)</h4>
+            <div><h5>Kendt for sin markante humlesmag og bitterhed, er alkoholfri IPA et fremragende valg for dem, der elsker en kraftig øloplevelse. ZeroBuzz tilbyder en udsøgt alkoholfri IPA, der tilfredsstiller selv den mest krævende smagsløg.</h5>
+            <img src="img/ipa.webp" alt="ZeroBuzz IPA"></div>
+            <h3>Hvedeøl</h3>
+            <h4>Alkoholfri Hvedeøl</h4>
+            <div><h5>Denne type øl har en blødere og ofte lidt frugtagtig smag. Den er perfekt til dem, der foretrækker en mildere øl. Vores alkoholfri hvedeøl er en forfriskende og let drik, ideel til sommerdage.</h5>
+            <img src="img/wheat.webp" alt="ZeroBuzz Hvedeøl"></div>
+            <h3>Stout</h3>
+            <h4>Alkoholfri Stout</h4>
+            <div><h5>Med sine rige, mørke smagsnoter af chokolade og kaffe, tilbyder alkoholfri stout en dyb og tilfredsstillende øloplevelse uden alkoholens virkning. Prøv ZeroBuzz's alkoholfri stout for en intens smagsoplevelse.</h5>
+            <img src="img/stout-can.webp" alt="ZeroBuzz Stout"></div>
+            <h3>Pilsner</h3>
+            <h4>Alkoholfri Pilsner</h4>
+            <div><h5>En sprød og let drik, der er ideel for dem, der ønsker en klassisk øloplevelse uden alkohol. Perfekt til at slukke tørsten på en varm dag. Vores alkoholfri pilsner er en favorit blandt mange.</h5>
+            <img src="img/pilsner-can.webp" alt="ZeroBuzz Pilsner"></div>
+            <h3>Frugtøl</h3>
+            <h4>Alkoholfri Frugtøl</h4>
+            <div><h5>Disse øl er ofte infunderet med frugtsmag, hvilket giver en sød og forfriskende smagsoplevelse. Perfekt som en let drik til sociale sammenkomster. Prøv vores alkoholfri frugtøl for en unik og forfriskende oplevelse.</h5>
+            <img src="img/citrus.webp" alt="ZeroBuzz Citrus"></div>
+            <h3>Specialøl</h3>
+            <h4>Alkoholfri Specialøl</h4>
+            <h5>Bryggerier eksperimenterer ofte med unikke ingredienser og brygmetoder for at skabe nye og spændende alkoholfri øl. Dette kan inkludere alt fra krydret til urtesmag. ZeroBuzz's sortiment af alkoholfri specialøl vil overraske og glæde dine smagsløg.</h5>
+            <h5>Der er en alkoholfri øl for enhver smag, uanset om du foretrækker noget let og forfriskende eller noget rigt og komplekst. Eksperimentér med forskellige typer for at finde din favorit. Besøg ZeroBuzz og opdag vores udvalg af alkoholfri øl i dag.</h5>
         </section>
     </main>
     
