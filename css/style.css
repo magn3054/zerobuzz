@@ -4,21 +4,14 @@
     box-sizing: border-box;
 }
 
-html {
+body {
+    font-family: poppins;
     overflow-x: hidden;
     color: #012249;
     height: 100%;
-    font-family: poppins;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    /* height: 100%; */
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 }
 
 /* alders-check modal */

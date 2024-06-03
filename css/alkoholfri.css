@@ -1,0 +1,158 @@
+.shop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > .type {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    & > .type > h2 {
+        font-family: 'Abril Fatface', serif;
+        margin: 0 0 0.12rem 0;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+    }
+
+    & > .vare {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: calc(50% - 0.5rem);
+        padding: 0.5rem 0.25rem;
+        margin: 0.5rem 0.25rem;
+        background-color: #fab832;
+        border-radius: 0.5rem;
+        
+        & > .beer-image:not(.triple) {
+            display: flex;
+            justify-content: center;
+            height: 15rem;
+            border-radius: 0.25rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19) inset, 0 6px 6px rgba(0,0,0,0.23) inset;
+            margin: 0.25rem;
+            padding: 0.25rem 2rem;
+            
+            & > img {
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        & > .triple {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            min-height: 15rem;
+            border-radius: 0.25rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19) inset, 0 6px 6px rgba(0,0,0,0.23) inset;
+            margin: 0.25rem;
+            padding: 0.25rem 6rem;
+            
+            & > img {
+                filter: drop-shadow( 0px 2px 12px rgb(0, 0, 0));
+            }
+
+            & > img:nth-child(1) {
+                position: absolute;
+                transform: scale(0.94) translate(-65%, 0);
+                height: 100%;
+                width: auto;
+                
+                &.can {
+                    transform: scale(0.60) translate(-65%, 25%);
+                }
+            }
+            & > img:nth-child(2) {
+                position: absolute;
+                transform: scale(0.94) translate(65%, 0);
+                height: 100%;
+                width: auto;
+
+                &.can {
+                    transform: scale(0.60) translate(65%, 25%);
+                }
+            }
+            & > img:nth-child(3) {
+                position: absolute;
+                height: 100%;
+                width: auto;
+
+                &.can {
+                    transform: scale(0.65) translate(0, 25%);
+                }
+            } 
+        }
+        
+        & > .right {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            margin-right: 0.5rem;
+            padding: 0.25rem;
+
+            & > .beer-tekst {
+                display: flex;
+                 flex-direction: column;
+                height: 100%;
+                width: 100%;
+
+                & > h3 {
+                    font-family: 'Abril Fatface', serif;
+                    margin: 0 0 0.25rem 0;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2rem;
+                    align-self: center;
+                }
+
+                & > h4 {
+                    margin: 0 1rem 0 2rem;
+                }
+            }
+
+            & > button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: flex-end;
+                width: 5rem;
+                margin: 0 0 .5rem 0;
+                padding: 0.25rem;
+                background-color: #fab832;
+                border: 4px solid #3753BE;
+                color: #012249;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                font-size: medium;
+                font-weight: bold;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.19), 0 2px 6px rgba(0,0,0,0.23);
+                transition: transform 0.2s ease;
+
+                &:active {
+                    transform: scale(0.95); 
+                    box-shadow: 0 5px 20px rgba(0,0,0,0.19) inset, 0 2px 6px rgba(0,0,0,0.23) inset;
+                }
+
+                & > img {
+                    align-self: center;
+                    height: 1.25rem;
+                    margin: 0 0 0 0.25rem;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (min-width: 1000px) {
+    .shop {
+        & > .vare {
+            width: calc(20% - 0.5rem);
+        }
+    }
+}

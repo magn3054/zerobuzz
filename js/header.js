@@ -43,3 +43,8 @@ eventDrop.addEventListener('change', function() {
         seasonDrop.checked = false;
     }
 });
+
+function ref(page) {
+    window.location.href = '/' + page + '.html';
+    console.log('/' + page + '.html');
+}

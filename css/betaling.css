@@ -1,0 +1,223 @@
+.home {
+    background-color: #3573be;
+    border-radius: 40%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.produkter {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1rem 0.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    justify-content: space-between;
+    padding: 1rem 0.25rem;
+
+    & > h2 {
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+        margin: 0 0 1rem 0;
+    }
+
+    & > .produkt {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        width: auto;
+        background-color: #fab832;
+        border-radius: 0.5rem;
+        margin: 0.5rem auto;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19) inset, 0 6px 6px rgba(0,0,0,0.23) inset;
+    }
+
+}
+
+.ialt {
+    font-size: 1.12rem;
+    font-weight:600;
+    height: auto;
+    min-width: min-content;
+    width: fit-content;
+    align-self: center;
+    margin: -1rem 0 0.5rem 0;
+    z-index: 2;
+    background-color: #fab832;
+    padding: 0.12rem 0.5rem;
+    box-shadow: -2px 3px 10px #00000080, 2px 3px 5px #0000006e, 0 5px 10px #00000038, 0 -10px 20px #00000018 inset, 0 -6px 6px #0000004d inset;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.oplysninger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    margin: 1rem 0 2rem 0;
+
+    & > h2 {
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+        margin: 0 0 1rem 0;
+    }
+    
+    & > form {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr); 
+        column-gap: 0.5rem;
+        width: 100%;
+        padding: 0.75rem 0.5rem 0 0.5rem;
+
+        & > #navn, #efternavn, #postnr, #by, #udlob, #cvc {
+            width: 50%;
+        }
+
+        & > #navn, label[for="navn"] {grid-area: 1 / 1 / 2 / 2;}
+        & > #efternavn, label[for="efternavn"] {grid-area: 1 / 2 / 2 / 3;}
+        & > #email, label[for="email"] {grid-area: 2 / 1 / 3 / 3;}
+        & > #adresse, label[for="adresse"] {grid-area: 3 / 1 / 4 / 3;}
+        & > #postnr, label[for="postnr"] {grid-area: 4 / 1 / 5 / 2;}
+        & > #by, label[for="by"] {grid-area: 4 / 2 / 5 / 3;}
+        & > #tlf, label[for="tlf"] {grid-area: 5 / 1 / 6 / 3;}
+        & > #kort, label[for="kort"] {grid-area: 6 / 1 / 7 / 3;}
+        & > #udlob, label[for="udlob"] {grid-area: 7 / 1 / 8 / 2;}
+        & > #cvc, label[for="cvc"] {grid-area: 7 / 2 / 8 / 3;}
+
+        & > input:not([type="submit"]) {
+            min-width: 100%;
+            border: solid 2px #3573be;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin: 0.75rem 0;
+            font-size: 1rem;
+            color: #012249;         
+            transition: border 400ms cubic-bezier(0.4,0,0.2,1);
+
+            &:focus, &:valid {
+                outline: none;
+                border: 2px solid #fab832;
+            }
+        }
+
+        & > label {
+            position: absolute;
+            left: 15px;
+            color: #012249;
+            pointer-events: none;
+            transform: translateY(1.6rem);
+            transition: 400ms cubic-bezier(0.4,0,0.2,1);
+        }
+
+        & > input:focus + label, input:valid + label {
+            transform: translateY(-40%) scale(0.8);
+            background-color: #ffffff;
+            padding: 0 0.2rem;
+            color: #fab832;
+            font-weight: bolder;
+            border: solid 2px #fab832;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        & > input[type="submit"] {
+            grid-area: 8 / 1 / 9 / 3;
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 1rem;
+            background-color: #fab832;
+            color: #012249;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            transition: transform 0.2s ease;
+
+            &:active {
+                transform: scale(0.95);
+                background-color: #ef9f00;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "opls produkt";
+    }
+    
+    .oplysninger {
+        grid-area: opls;
+        margin: 2rem 2rem;
+        width: auto;
+
+        & > form {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(8, 1fr); 
+            column-gap: 0.5rem;
+
+            & > #navn, label[for="navn"] {grid-area: 1 / 2 / 2 / 3;}
+            & > #efternavn, label[for="efternavn"] {grid-area: 1 / 3 / 2 / 4;}
+            & > #email, label[for="email"] {grid-area: 2 / 2 / 3 / 4;}
+            & > #adresse, label[for="adresse"] {grid-area: 3 / 2 / 4 / 4;}
+            & > #postnr, label[for="postnr"] {grid-area: 4 / 2 / 5 / 3;}
+            & > #by, label[for="by"] {grid-area: 4 / 3 / 5 / 4;}
+            & > #tlf, label[for="tlf"] {grid-area: 5 / 2 / 6 / 4;}
+            & > #kort, label[for="kort"] {grid-area: 6 / 2 / 7 / 4;}
+            & > #udlob, label[for="udlob"] {grid-area: 7 / 2 / 8 / 3;}
+            & > #cvc, label[for="cvc"] {grid-area: 7 / 3 / 8 / 4;}
+        
+            & > input[type="submit"] {
+                grid-area: 8 / 2 / 9 / 4;
+            }
+        }
+    }
+
+    .produkter {
+        grid-area: produkt;
+        margin: 1rem 0.5rem;
+        padding: 1rem 0.25rem;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        align-items: center;
+        display: grid;
+        row-gap: 3rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 3rem max-content max-content max-content max-content;
+
+        & > h2 {
+            grid-area: 1 / 1 / 2 / 5;
+        }
+        
+        & > .produkt {
+            display: grid;
+            justify-items: center;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            width: auto;
+            background-color: #fab832;
+            border-radius: 0.5rem;
+            margin: 0.5rem auto;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19) inset, 0 6px 6px rgba(0,0,0,0.23) inset;
+        }
+    }
+
+    .ialt {
+        grid-area: produkt;
+        translate: -90%;
+        margin: 0 0 0.5rem 0;
+        z-index: 2;
+        background-color: #fab832;
+        padding: 0.12rem 0.5rem;
+        box-shadow: -2px 0px 5px #00000080, 2px 0px 5px #0000006e, 0 0px 5px #00000038, 0 -10px 20px #00000018 inset, 0 -6px 6px #0000004d inset;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+}

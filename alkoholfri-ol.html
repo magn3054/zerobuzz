@@ -11,10 +11,10 @@
     <title>ZeroBuzz</title>
     <script defer src="js/modal.js"></script> <!-- defer = loader script efter html -->
     <script defer src="js/header.js"></script> <!-- men holder det overskueligt at have den i head -->
-    <script defer src="js/index.js"></script>
+    <!-- <script defer src="js/alkoholfri.js"></script> -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/alkoholfri.css">
 </head>
 <body>
     <div id="age-check-modal" class="modal">
@@ -121,7 +121,7 @@
             <img class="kurv" src="img/basket.svg" alt="Indkøbskurv" onclick="ref('betaling')">
             <ul>
                 <li>
-                    <a href="alkoholfri-ol.html"><h4>ØL</h4></a>
+                    <a href="#"><h4>ØL</h4></a>
                     <div class="subnav">
                         <a href="#"><h5>Pilsner</h5></a>
                         <a href="#"><h5>IPA</h5></a>
@@ -161,32 +161,20 @@
     </header>
     
     <main>
-        <section class="pic-container">
-            <picture>
-                <source srcset="img/f1.webp" type="image/webp" media="(min-width: 1000px)">
-                <source srcset="img/f1.webp" type="image/webp" media="(max-width: 999px)">
-                <img src="img/crowd.webp" alt="en strand med folk">
-            </picture>
-            <picture class="overlay">
-                <source srcset="img/three-beers.webp" type="image/webp">
-                <img src="img/three-beers.webp" alt="Tre øl">
-            </picture>
-        </section>
-
-
-        <section class="shop">
+        <section class="shop flasker">
+            <div class="type"><h2 id="flasker">Alkoholfri Øl På Flaske</h2></div>
             <div class="vare">
                 <div class="beer-image">
                     <img src="img/pilsner.webp" alt="Pilsner øl">
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>Pilsner</h2>
+                        <h3>Pilsner</h3>
                         <h4>
                             Oplev friskheden i vores alkoholfrie pilsner - samme smag, ingen alkohol. Perfekt til enhver anledning!
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div>
             </div>
             
@@ -196,79 +184,75 @@
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>Ipa</h2>
+                        <h3>Ipa</h3>
                         <h4>
                             Oplev intens humlesmag med vores IPA - en kompleks og fyldig øl, perfekt for ølentusiaster!
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div>
             </div>
             
-            <div class="vare hid hidden">
+            <div class="vare">
                 <div class="beer-image">
                     <img src="img/citrus.webp" alt="Citrus øl">
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>citrus øl</h2>
+                        <h3>citrus øl</h3>
                         <h4>
                             Forkæl dine sanser med vores citrusøl - en forfriskende og sprudlende øl med en frisk citrussmag!
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div>
             </div>
             
-            <div class="vare hid hidden">
+            <div class="vare">
                 <div class="beer-image">
                     <img src="img/wheat.webp" alt="Hvede øl">
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>lys hvede</h2>
+                        <h3>lys hvede</h3>
                         <h4>
                             Nyd lethed og blødhed med vores lyse hvedeøl - ideel til varme sommerdage og afslappede stunder.
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div>
             </div>
             
-            <div class="vare hid hidden">
+            <div class="vare">
                 <div class="beer-image">
                     <img src="img/stout.webp" alt="Stout">
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>stout</h2>
+                        <h3>stout</h3>
                         <h4>
                             Dyk ned i vores stout - en mørk, fyldig øl med rige noter af chokolade og kaffe. Perfekt til hygge!
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div>
-            </div>
-            <div class="se-mere">
-                <div class="linje"></div>
-                <div id="se-mere">Se mere</div>
-                <div class="linje"></div>
             </div>
         </section>
 
-        <section class="shop">
+        <section class="shop dåser">
+            <div class="type"><h2 id="dåser">Alkoholfri Øl På Dåse</h2></div>
             <div class="vare">
                 <div class="beer-image">
                     <img src="img/pilsner-can.webp" alt="Pilsner øl">
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>Pilsner</h2>
+                        <h3>Pilsner</h3>
                         <h4>
                             Oplev friskheden i vores alkoholfrie pilsner - samme smag, ingen alkohol. Perfekt til enhver anledning!
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div>
             </div>
             
@@ -278,78 +262,159 @@
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>Ipa</h2>
+                        <h3>Ipa</h3>
                         <h4>
                             Oplev intens humlesmag med vores IPA - en kompleks og fyldig øl, perfekt for ølentusiaster!
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div>
             </div>
             
-            <div class="vare hid hidden">
+            <div class="vare">
                 <div class="beer-image">
                     <img src="img/citrus-can.webp" alt="Citrus øl">
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>citrus øl</h2>
+                        <h3>citrus øl</h3>
                         <h4>
                             Forkæl dine sanser med vores citrusøl - en forfriskende og sprudlende øl med en frisk citrussmag!
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div> 
             </div>
             
-            <div class="vare hid hidden">
+            <div class="vare">
                 <div class="beer-image">
                     <img src="img/wheat-can.webp" alt="Hvede øl">
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>lys hvede</h2>
+                        <h3>lys hvede</h3>
                         <h4>
                             Nyd lethed og blødhed med vores lyse hvedeøl - ideel til varme sommerdage og afslappede stunder.
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div>
             </div>
             
-            <div class="vare hid hidden">
+            <div class="vare">
                 <div class="beer-image">
                     <img src="img/stout-can.webp" alt="Stout">
                 </div>
                 <div class="right">
                     <div class="beer-tekst">
-                        <h2>stout</h2>
+                        <h3>stout</h3>
                         <h4>
                             Dyk ned i vores stout - en mørk, fyldig øl med rige noter af chokolade og kaffe. Perfekt til hygge!
                         </h4>
                     </div>
-                    <button>Læs mere</button>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
                 </div>
-            </div>
-            <div class="se-mere">
-                <div class="linje"></div>
-                <div id="se-mere-cans">Se mere</div>
-                <div class="linje"></div>
             </div>
         </section>
 
-        <section class="mission">
-            <picture>
-                <source srcset="img/crowd-double-half.webp" type="image/webp" media="(min-width: 1000px)">
-                <source srcset="img/crowd.webp" type="image/webp" media="(max-width: 999px)">
-                <img src="img/crowd.webp" alt="en strand med folk">
-            </picture>
-            <div class="beskrivelse">
-                <h2>Vores mission</h2>
-                <h4>
-                    Hos ZeroBuzz Brew er vores mission at tilbyde de bedste alkoholfri øl, der fremmer en sundere livsstil og skaber inkluderende øjeblikke af nydelse og fællesskab. </h4><h4>
-                    Vi stræber efter at blive det foretrukne valg for alle, der ønsker kvalitetsøl uden alkohol, og at inspirere til bevidste, sociale valg.
-                </h4>
+        <section class="shop pakker">
+            <div class="type"><h2 id="flasker">ØL pakker</h2></div>
+            <div class="vare">
+                <div class="beer-image triple">
+                    <img class="bottle" src="img/pilsner.webp" alt="Øl pakke">
+                    <img class="bottle" src="img/pilsner.webp" alt="Øl pakke">
+                    <img class="bottle" src="img/pilsner.webp" alt="Øl pakke">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h3>Pilsner 3x</h3>
+                        <h4>Til dig der bare ikke kan få nok af vores pilsner variant</h4>
+                    </div>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
+                </div>
+            </div>
+            
+            <div class="vare">
+                <div class="beer-image triple">
+                    <img class="can" src="img/pilsner-can.webp" alt="Øl pakke">
+                    <img class="can" src="img/pilsner-can.webp" alt="Øl pakke">
+                    <img class="can" src="img/pilsner-can.webp" alt="Øl pakke">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h3>Pilsner 3x</h3>
+                        <h4>Til dig der bare ikke kan få nok af vores pilsner variant - nu som dåse</h4>
+                    </div>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
+                </div>
+            </div>
+            
+            <div class="vare">
+                <div class="beer-image triple">
+                    <img class="bottle" src="img/ipa.webp" alt="Øl pakke">
+                    <img class="bottle" src="img/ipa.webp" alt="Øl pakke">
+                    <img class="bottle" src="img/citrus.webp" alt="Øl pakke">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h3>Citrus - ipa 2x</h3>
+                        <h4>
+                            Forkæl dine sanser med vores citrusøl - og to af vores udsøgte IPA'er!
+                        </h4>
+                    </div>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
+                </div>
+            </div>
+            
+            <div class="vare">
+                <div class="beer-image triple">
+                    <img class="bottle" src="img/stout.webp" alt="Øl pakke">
+                    <img class="bottle" src="img/wheat.webp" alt="Øl pakke">
+                    <img class="can" src="img/pilsner-can.webp" alt="Øl pakke">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h3>lys & mørk</h3>
+                        <h4>
+                            Nyd lethed og blødhed med vores lyse hvedeøl - De mørke søde toner af vores stout - Skyld efter med den klassiske pilsner.
+                        </h4>
+                    </div>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
+                </div>
+            </div>
+            
+            <div class="vare">
+                <div class="beer-image triple">
+                    <img class="can" src="img/citrus-can.webp" alt="Øl pakke">
+                    <img class="can" src="img/citrus-can.webp" alt="Øl pakke">
+                    <img class="bottle" src="img/ipa.webp" alt="Øl pakke">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h3>Frisk sommer</h3>
+                        <h4>
+                            Find sommer humøret frem med denne pakke af to gange citrus og en IPA. Perfekt til hygge!
+                        </h4>
+                    </div>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
+                </div>
+            </div>
+            
+            <div class="vare">
+                <div class="beer-image triple">
+                    <img class="can" src="img/stout-can.webp" alt="Øl pakke">
+                    <img class="can" src="img/stout-can.webp" alt="Øl pakke">
+                    <img class="can" src="img/stout-can.webp" alt="Øl pakke">
+                </div>
+                <div class="right">
+                    <div class="beer-tekst">
+                        <h3>stout 3x</h3>
+                        <h4>
+                            Dyk ned i vores stout - en mørk, fyldig øl med rige noter af chokolade og kaffe. Som en aften bør rundes af!
+                        </h4>
+                    </div>
+                    <button>Tilføj<img src="img/basket.svg" alt="indkøbsvogn"></button>
+                </div>
             </div>
         </section>
     </main>

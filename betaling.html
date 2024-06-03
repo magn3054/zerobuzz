@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo_letter.svg" type="image/x-icon">
+    <title>ZeroBuzz</title>
+    <script defer src="js/modal.js"></script> <!-- defer = loader script efter html -->
+    <script defer src="js/header.js"></script> <!-- men holder det overskueligt at have den i head -->
+    <script defer src="js/betaling.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/betaling.css">
+</head>
+<body>
+    <div id="age-check-modal" class="modal">
+        <div class="modal-content">
+            <h2>Bekræft Din Alder</h2>
+            <p>Du skal være mindst 18 år for at besøge denne side.</p>
+            <button id="age-yes">
+                <img src="img/yes-button.svg" alt="ja knap">
+                Jeg er over 18 
+            </button>
+            <button id="age-no">
+                <img src="img/no-button.svg" alt="">
+                Jeg er under 18 
+            </button>
+        </div>
+    </div>
+
+    <header>
+        <nav class="phone-nav">
+            <img class="kurv home" src="img/basket.svg" alt="Indkøbskurv" onclick="ref('betaling')">
+
+            <img class="logo-img" src="img/logo_letter-bg.svg" alt="Logo" onclick="ref('index')">
+            
+            <input id="checkbox2" type="checkbox">
+            <label class="burger" for="checkbox2">
+                <div id="bar4" class="bars"></div>
+                <div id="bar5" class="bars"></div>
+                <div id="bar6" class="bars"></div>
+            </label>
+
+            <section class="dropdown">
+                <ul>
+                    <li>
+                        <label class="drop" for="ol-drop">
+                            <input id="ol-drop" type="checkbox">
+                            <img class="beer-closed" src="img/beer-icon-full.svg" alt="Øl ikon">
+                            <img class="beer-open" src="img/beer-icon-empty.svg" alt="Øl ikon">
+                            <h2>ØL</h2>
+                            <section class="subsections">
+                                <ul>
+                                    <li><a href="alkoholfri-ol.html">Pilsner</a></li>
+                                    <li><a href="alkoholfri-ol.html">IPA</a></li>
+                                    <li><a href="alkoholfri-ol.html">Lys Hvede</a></li>
+                                    <li><a href="alkoholfri-ol.html">Stout</a></li>
+                                    <li><a href="alkoholfri-ol.html">Citrus</a></li>
+                                </ul>
+                            </section>
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="drop" for="brygning-drop">
+                            <input id="brygning-drop" type="checkbox">
+                            <img class="beer-closed" src="img/beer-icon-full.svg" alt="Øl ikon">
+                            <img class="beer-open" src="img/beer-icon-empty.svg" alt="Øl ikon">
+                            <h2>BRYGNING</h2>
+                            <section class="subsections">
+                                <ul>
+                                    <li><a href="">Gyldne Metode</a></li>
+                                    <li><a href="">Mød Bryggerne</a></li>
+                                    <li><a href="">Brygshops</a></li>
+                                    <li><a href="">Øl Mesters Blog</a></li>
+                                </ul>
+                            </section>
+                        </label>
+                    </li>
+                    
+                    <li>
+                        <label class="drop" for="season-drop">
+                            <input id="season-drop" type="checkbox">
+                            <img class="beer-closed" src="img/beer-icon-full.svg" alt="Øl ikon">
+                            <img class="beer-open" src="img/beer-icon-empty.svg" alt="Øl ikon">
+                            <h2>SÆSON</h2>
+                            <section class="subsections">
+                                <ul>
+                                    <li><a href="">Forår</a></li>
+                                    <li><a href="">Sommer</a></li>
+                                    <li><a href="">Efterår</a></li>
+                                    <li><a href="">Vinter</a></li>
+                                </ul>
+                            </section>
+                        </label>
+                    </li>
+                    
+                    <li>
+                        <label class="drop" for="event-drop">
+                            <input id="event-drop" type="checkbox">
+                            <img class="beer-closed" src="img/beer-icon-full.svg" alt="Øl ikon">
+                            <img class="beer-open" src="img/beer-icon-empty.svg" alt="Øl ikon">
+                            <h2>EVENTS</h2>
+                            <section class="subsections">
+                                <ul>
+                                    <li><a href="">Bryg Din Egen</a></li>
+                                    <li><a href="">Øl Til Din Fest</a></li>
+                                </ul>
+                            </section>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <nav class="desktop-nav">
+            <img class="kurv home" src="img/basket.svg" alt="Indkøbskurv" onclick="ref('betaling')">
+            <ul>
+                <li>
+                    <a href="alkoholfri-ol.html"><h4>ØL</h4></a>
+                    <div class="subnav">
+                        <a href="#"><h5>Pilsner</h5></a>
+                        <a href="#"><h5>IPA</h5></a>
+                        <a href="#"><h5>Lys Hvede</h5></a>
+                        <a href="#"><h5>Stout</h5></a>
+                        <a href="#"><h5>Citrus</h5></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><h4>BRYGNING</h4></a>
+                    <div class="subnav">
+                        <a href="#"><h5>Gyldne Metode</h5></a>
+                        <a href="#"><h5>Mød Bryggerne</h5></a>
+                        <a href="#"><h5>Brygshops</h5></a>
+                        <a href="#"><h5>Øl Mesters Blog</h5></a>
+                    </div>
+                </li>
+                <img class="logo-img" src="img/logo_color.webp" alt="Logo" onclick="ref('index')">
+                <li>
+                    <a href="#"><h4>SÆSON</h4></a>
+                    <div class="subnav">
+                        <a href="#"><h5>Forår</h5></a>
+                        <a href="#"><h5>Sommer</h5></a>
+                        <a href="#"><h5>Efterår</h5></a>
+                        <a href="#"><h5>Vinter</h5></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><h4>EVENTS</h4></a>
+                    <div class="subnav">
+                        <a href="#"><h5>Bryg Din Egen</h5></a>
+                        <a href="#"><h5>Øl Til Din Fest</h5></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>      
+    </header>
+    
+    <main>
+        <section class="produkter">
+            <h2>Indkøbskurv</h2>
+            <section class="produkt">
+                <h3>Stout</h3>
+                <h4>Pris: 30 kr</h4>
+                <h4>Antal: 1</h4>
+            </section>
+            <section class="produkt">
+                <h3>Lys & Mørk</h3>
+                <h4>Pris: 75 kr</h4>
+                <h4>Antal: 1</h4>
+            </section>
+            <section class="produkt">
+                <h3>Citrus</h3>
+                <h4>Pris: 25 kr</h4>
+                <h4>Antal: 2</h4>
+            </section>
+            <section class="produkt">
+                <h3>Pilsner 3x</h3>
+                <h4>Pris: 60 kr</h4>
+                <h4>Antal: 1</h4>
+            </section>
+            <section class="produkt">
+                <h3>Pilsner 3x</h3>
+                <h4>Pris: 60 kr</h4>
+                <h4>Antal: 1</h4>
+            </section>
+        </section>
+        <section class="ialt">I alt: 275 kr</section>
+        
+        <section class="oplysninger">
+            <h2>Indtast dine oplysninger</h2>
+            <form action="betaling.php" method="post">
+                <input type="text" id="navn" name="navn" required autocomplete="off">
+                <label for="navn">Navn</label>
+                
+                <input type="text" id="efternavn" name="efternavn" required autocomplete="off">
+                <label for="efternavn">Efternavn</label>
+
+                <input type="email" id="email" name="email" required autocomplete="off">
+                <label for="email">Email</label>
+
+                <input type="text" id="adresse" name="adresse" required autocomplete="off">
+                <label for="adresse">Adresse</label>
+
+                <input type="number" id="postnr" name="postnr" required autocomplete="off" oninput="limitInput(this, 4)">
+                <label for="postnr">Postnummer</label>
+
+                <input type="text" id="by" name="by" required autocomplete="off">
+                <label for="by">By</label>
+
+                <input type="number" id="tlf" name="tlf" required autocomplete="off" oninput="limitInput(this, 8)">
+                <label for="tlf">Telefonnummer</label>
+
+                <input type="number" id="kort" name="kort" required autocomplete="off" oninput="limitInput(this, 8)">
+                <label for="kort">Kortnummer</label>
+
+                <input type="number" id="udlob" name="udlob" required autocomplete="off"  oninput="limitInput(this, 4)">
+                <label for="udlob">Udløbsdato</label>
+
+                <input type="number" id="cvc" name="cvc" required autocomplete="off" oninput="limitInput(this, 3)">
+                <label for="cvc">CVC</label>
+
+                <input type="submit" value="Betal">
+            </form>
+        </section>
+        <section class="produkt"></section>
+    </main>
+    
+    <footer>
+        <div class="cont">
+            <section class="virksomhedsinfo">
+                <h4>virksomhedsinformation</h4>
+                <h5>Zerobuzz Brew A/S</h5>
+                <h5>Tommy Seebachs Gade 5</h5>
+                <h5>DK - 8000 Aarhus</h5>
+                <h5>CVR-nr.: 12345678</h5>
+            </section>
+        </div>
+        <div class="cont">
+            <section class="kontakt">
+                <h4>Kontakt Os</h4>
+                <a href="">
+                    <h5>Kontakt os</h5>
+                </a><a href="">
+                    <h5>Donationer</h5>
+                </a>
+            </section>
+        </div>
+        <div class="cont">
+            <section class="sociale">
+                <a href="https://www.facebook.com/magnusdamsgaard.christiansen" target="_blank" class="soc">
+                    <img src="img/facebook.svg" alt="facebook logo">
+                    <h5>Facebook</h5>
+                </a>
+                <a href="https://www.instagram.com/magnus_damsgaard/" target="_blank" class="soc">
+                    <img src="img/instagram.svg" alt="Instagram logo">
+                    <h5>Instagram</h5>
+                </a>
+                <a href="https://www.linkedin.com/in/magnus-christiansen" target="_blank" class="soc">
+                    <img src="img/linkedin.svg" alt="LinkedIn logo">
+                    <h5>LinkedIn</h5>
+                </a>
+            </section>
+        </div>
+    </footer>
+    
+</body>
+</html>
