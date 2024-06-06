@@ -166,6 +166,7 @@ main {
             grid-template-rows: repeat(8, 1fr); 
             column-gap: 0.5rem;
 
+            /* Grid'et på store skærme er ændret for at gøre op for størrelsen/marginen ud til siderne */
             & > #navn, label[for="navn"] {grid-area: 1 / 2 / 2 / 3;}
             & > #efternavn, label[for="efternavn"] {grid-area: 1 / 3 / 2 / 4;}
             & > #email, label[for="email"] {grid-area: 2 / 2 / 3 / 4;}
@@ -212,7 +213,7 @@ main {
 
     .ialt {
         grid-area: produkt;
-        translate: -90%;
+        transform: translateX(-90%);
         margin: 0 0 0.5rem 0;
         z-index: 2;
         background-color: #fab832;

@@ -113,7 +113,6 @@ main {
         background-color: white;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* grid-template-rows: 1fr 1fr 1fr; */
     }
 
     .blog {
@@ -139,12 +138,13 @@ main {
         }
     }
     
+    /* Det her kode blev lidt rushed pga tid, jeg ville gerne have at billederne af øl var ned langs siden og teksten kørte flush på venstre side
+    men som det er nu, blokerer billederne for teksten */
     .post3 {
         grid-area: 3 / 1 / 4 / 3;
         border-radius: 0 2rem 2rem 0;
         display: grid;
         grid-template-columns: 50% 25% 25%; 
-        grid-template-rows: repeat(7, fit-content);
 
         & > h2 {
             grid-area: 1 / 1 / 2 / 4;

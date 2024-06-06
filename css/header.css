@@ -4,7 +4,6 @@ header {
     letter-spacing: 0.25rem;
     min-height: min-content;
     height: 5.5rem;
-    /* padding: 1rem 0; */
     width: 100%;
     background-color: #fab732;
     display: flex;
@@ -46,6 +45,7 @@ header {
     padding: 0.5rem;
 }
 
+/* navbar ikonet */
 .burger {
     position: relative;
     width: 3rem;
@@ -175,6 +175,7 @@ header {
         justify-self: start;
     }
 
+    /* Skifter ikonet fra en stående øl til en liggende øl  */
     & > ul > li > label > .beer-open, 
     & > ul > li > label > input:checked ~ .beer-closed {
         display: none;
@@ -197,6 +198,7 @@ header {
     justify-self: start;
 }
 
+/* styrer menuerne og synligheden af deres undermenuer */
 #ol-drop:checked ~ .subsections, 
 #brygning-drop:checked ~ .subsections, 
 #season-drop:checked ~ .subsections, 
@@ -253,6 +255,7 @@ header {
         margin: 0 1rem;
     }
 
+    /* Koden der styler hover funktionen ved submenuerne på en stor skærms navbar */
     .desktop-nav {
         display: flex;
         flex-direction: row;

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <!-- Modal til at bekræfte alder, popper op på alle sider medmindre man har svaret en gang uden at lukke fanen -->
     <div id="age-check-modal" class="modal">
         <div class="modal-content">
             <h2>Bekræft Din Alder</h2>
@@ -25,25 +26,29 @@
                 Jeg er over 18 
             </button>
             <button id="age-no">
-                <img src="img/no-button.svg" alt="">
+                <img src="img/no-button.svg" alt="Nej knap">
                 Jeg er under 18 
             </button>
         </div>
     </div>
 
+    <!-- Headeren, footeren og modal er ens på alle sider -->
     <header>
+        <!-- Headeren der er aktiveret ved mobile størrelser -->
         <nav class="phone-nav">
             <img class="kurv" src="img/basket.svg" alt="Indkøbskurv" onclick="ref('betaling')">
 
             <img class="logo-img" src="img/logo_letter-bg.svg" alt="Logo" onclick="ref('index')">
             
+            <!-- navbar ikon -->
             <input id="checkbox2" type="checkbox">
             <label class="burger" for="checkbox2">
                 <div id="bar4" class="bars"></div>
                 <div id="bar5" class="bars"></div>
                 <div id="bar6" class="bars"></div>
             </label>
-
+            
+            <!-- dropdown menu -->
             <section class="dropdown">
                 <ul>
                     <li>
@@ -116,6 +121,7 @@
             </section>
         </nav>
 
+        <!-- Headeren der er aktiveret ved desktop størrelser -->
         <nav class="desktop-nav">
             <img class="kurv" src="img/basket.svg" alt="Indkøbskurv" onclick="ref('betaling')">
             <ul>
@@ -160,6 +166,7 @@
     </header>
     
     <main>
+        <!-- Det øverste billede på forsiden med et billede af 3 øl ovenopå -->
         <section class="pic-container">
             <picture>
                 <source srcset="img/f1.webp" type="image/webp" media="(min-width: 1000px)">
@@ -172,7 +179,7 @@
             </picture>
         </section>
 
-
+        <!-- Liste af øl på flaske -->
         <section class="shop">
             <div class="vare">
                 <div class="beer-image">
@@ -255,6 +262,7 @@
             </div>
         </section>
 
+        <!-- Liste af øl på dåse -->
         <section class="shop">
             <div class="vare">
                 <div class="beer-image">
@@ -337,6 +345,7 @@
             </div>
         </section>
 
+        <!-- Insight i firmaets mission -->
         <section class="mission">
             <picture>
                 <source srcset="img/crowd-double-half.webp" type="image/webp" media="(min-width: 1000px)">
@@ -353,6 +362,7 @@
         </section>
     </main>
     
+    <!-- Footeren er ens på alle sider, meget standard med kontaktoplysninger, links til sociale -->
     <footer>
         <div class="cont">
             <section class="virksomhedsinfo">
