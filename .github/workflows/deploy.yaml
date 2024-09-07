@@ -1,4 +1,4 @@
-name: Deploy to Simply.com
+name: Deploy to Simply.com 
 
 on:
   push:
