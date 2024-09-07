@@ -151,7 +151,7 @@ footer {
         height: 100%;
         margin: 0 0.5rem 0.5rem 0;
         width: max-content;
-        
+
         & > .soc {
             display: flex;
             align-items: center;
